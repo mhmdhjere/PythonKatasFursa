@@ -19,7 +19,7 @@ class TestCountTrueValues(unittest.TestCase):
         self.assertEqual(count_true_values([1, "True", True, 0, None]), 1)
 
     def test_only_true_counted(self):
-        self.assertEqual(count_true_values([True, True is True, False is False, 1 == 1, 0]), 3)
+        self.assertEqual(count_true_values([True, True is True, False is False, 1 == 1, 0]), 4)
 
 if __name__ == "__main__":
     unittest.main()
