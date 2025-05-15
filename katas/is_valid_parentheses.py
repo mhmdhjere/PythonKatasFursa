@@ -6,7 +6,7 @@ def is_valid_parentheses(s):
             stack.append(ch)
         elif not stack or dict[stack.pop()] != ch: 
             return False
-    return True
+    return not stack
 
 
 if __name__ == '__main__':
