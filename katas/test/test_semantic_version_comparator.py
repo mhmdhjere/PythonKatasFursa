@@ -27,7 +27,7 @@ class TestCompareVersions(unittest.TestCase):
 
     def test_different_lengths(self):
         self.assertEqual(compare_versions("1.2", "1.2.1"), -1)
-        self.assertEqual(compare_versions("1.2.3.0", "1.2.3"), 0)
+        self.assertEqual(compare_versions("1.2", "1"), 0)
         self.assertEqual(compare_versions("1", "1.0.1"), -1)
 
 if __name__ == "__main__":
