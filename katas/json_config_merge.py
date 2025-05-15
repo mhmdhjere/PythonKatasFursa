@@ -15,7 +15,7 @@ def json_merge(json1, json2):
 def json_configs_merge(*json_paths: str) -> dict[str, Any]:
     data = None
 
-    if json_paths is None or json_paths == "":
+    if not json_paths or json_paths == "":
         return {}
 
     with open(json_paths[0], 'r') as js:
