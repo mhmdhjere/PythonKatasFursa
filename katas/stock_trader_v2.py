@@ -1,5 +1,5 @@
 def max_profit(prices):
-    curr_buy_price = max(prices) + 1
+    curr_buy_price = float('inf')
     curr_profit = 0
 
     for p in prices:
